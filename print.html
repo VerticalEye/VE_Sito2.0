@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <title>VerticalEye | Stampa 3D</title>
+    <meta name="description" content="Soluzioni con droni, su misura, per rilievi topografici, ispezioni e riprese in tempi ridotti, applicabili in svariati campi: Edilizia, Progettazione, Certificazione, Efficientamento, Restauro Archeologia, Promozione e pubblicità, Agricoltura, Allevamento>">
+    <!--favicon START-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="assets/images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!--favicon FINE-->
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/application.css">
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/grid-sistem.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" async>
+      var _iub = _iub || [];
+      _iub.csConfiguration = {"consentOnContinuedBrowsing":false,"perPurposeConsent":true,"enableCMP":true,"googleAdditionalConsentMode":true,"isTCFConsentGlobal":false,"whitelabel":false,"lang":"it","siteId":1958527,"cookiePolicyId":47765479, "banner":{ "acceptButtonDisplay":true,"customizeButtonDisplay":true,"acceptButtonColor":"#f4992c","acceptButtonCaptionColor":"#010101","customizeButtonColor":"#DADADA","customizeButtonCaptionColor":"#4D4D4D","position":"bottom","textColor":"#ffffff","backgroundColor":"#010101","rejectButtonColor":"#0073CE","rejectButtonCaptionColor":"white","brandBackgroundColor":"none","brandTextColor":"#ffffff" }};
+    </script>
+    <script type="text/javascript" src="//cdn.iubenda.com/cs/tcf/stub-v2.js" async></script>
+    <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+    <script type="text/javascript" src="assets/javascripts/jquery.js"></script>
+  </head>
+
+  <body>
+    <div class="container-fluid col-flex" id="initial">
+      <div class="logo">
+        <img src="assets/images/biancovero trasparente_fermoepausa_noloop.gif">
+      </div>
+    </div>
+    <header class="container-fluid" id="header">
+      <div class="container-sm row">
+        <div class="logo-container col" id="head-logo">
+          <a href="index.html"><img src="assets/images/logo-tricolore.png" alt= "Verticaleye_logo"></a> 
+        </div>
+        <div class="col" id="navbar">
+          <nav id="pc-nav">
+            <ul class="nav-list ul-lefted">
+              <li class=""><a href="index.html">Home</a></li>
+              <li class=""><a href="about.html">About</a></li>
+              <li class=""><a href="drone.html">Drone</a></li>
+              <li class=""><a href="survey.html">Rilievi</a></li>
+              <li class="invisible"><a href="archeologia.html">Archeologia</a></li>
+              <li class="active"><a href="print.html">Satmpa 3D</a></li>  
+              <li class=""><a href="portfolio.html">Portfolio</a></li>
+              <li class=""><a href="contacts.html">Contatti</a></li>
+            </ul> 
+          </nav>
+          <nav id="middle-nav">
+            <ul class="nav-list ul-lefted">
+              <li class=""><a href="index.html">Home</a></li>
+              <li class=""><a href="about.html">About</a></li>
+              <li class="dropdown">
+                <div class="dropbtn row">Servizi <span class="material-icons" id="dropIcon">arrow_drop_down</span></i></div>
+                <ul class="dropdown-content ul-lefted invisible" id="myDropdown">
+                  <li class=""><a href="drone.html">Drone</a></li>
+                  <li class=""><a href="survey.html">Rilievi</a></li>
+                  <li class="invisible"><a href="archeologia.html">Archeologia</a></li>
+                  <li class="active"><a href="print.html">Satmpa 3D</a></li>  
+                </ul>
+              </li>     
+              <li class=""><a href="portfolio.html">Portfolio</a></li>
+              <li class=""><a href="contacts.html">Contatti</a></li>
+            </ul> 
+          </nav>
+          <nav id="mobile-nav">
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="index.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="drone.html">Drone</a>
+              <a href="survey.html">Rilievi</a>
+              <a href="archeologia.html">Archeologia</a>
+              <a href="print.html">Satmpa 3D</a> 
+              <a href="portfolio.html">Portfolio</a>
+              <a href="contacts.html">Contatti</a>
+            </div>
+            <!-- Use any element to open the sidenav -->
+            <i onclick="openNav()"class="material-icons" id="menu" style="cursor: pointer;">menu</i>  
+          </nav>
+        </div>
+
+      </div>
+    </header>
+    <main id="main">
+      <div class="hero container-fluid white-text center-text B s2 bg-8" id="hero-print">
+        <div class="hero-titlebox"></div>
+        <div class="title-container"><h1 class="up">stampa 3D</h1></div>
+      </div>
+      <section class="container-fluid white-text">
+        <div class="widescreen-post-hero">
+          <h2 class="s4 center-text animation-element fade-from-top">L'unico limite a ciò che puoi creare è la tua fantasia</h2>
+        </div>
+        <div class="container-md center-text">
+          <div class="rounded s2" id="print-intro">
+            <p class="justified animation-element fade-from-left">La <strong>stampa 3D</strong> è una tecnica che permette di ottenere riproduzioni fisiche a partire da <strong>modelli tridimensionali</strong>. Tramite l'utilizzo di apposite <strong>stampanti 3D</strong> si è ora in grado di realizzare qualsiasi modello tridimensionale: partendo da un oggetto disegnato tramite software di modellazione 3D o da un modello fotogrammetrico derivato da un rilievo, si riesce a realizzarlo, creandone una copia tangibile. La procedura prevede l'utilizzo di appositi materiali (solitamente plastici o affini) tramite il posizionamento di uno strato sopra l’altro, procedendo per sezioni trasversali, attraverso la modellazione a deposizione fusa (oppure FDM, dall’inglese “fused deposition modeling”), con cui si impiega un ugello riscaldato che alza la temperatura del materiale prima di depositarlo. </p>
+          </div>
+        </div>
+      </section>
+      <section id="vantaggi-stampa" class="fade-in ">
+        <div class="container col-flex s2">
+          <h2 class="center-text up B white-text">Perchè scielgliere la Stampa 3d</h2>
+          <div class="row justified white-text">
+            <div class="col-md-4 animation-element fade-from-bottom">
+              <div class="center-text"><i class="material-icons">monetization_on</i></div>
+              <div>
+                <h3 class="center-text">Costi contenuti</h3>
+                <p>Grazie alle tempistiche ridotte e alla poca manodopera richiesta, i costi della stampa 3D sono nettamente inferiori rispetto ai normali metodi di produzione.</p>
+              </div>
+            </div>
+            <div class="col-md-4 animation-element fade-from-bottom">
+              <div class="center-text"><i class="material-icons">flash_on</i></div>
+              <div>
+                <h3 class="center-text">Rapidità</h3>
+                <p>Uno dei principali vantaggi della produzione additiva è la velocità con cui è possibile produrre parti rispetto ai metodi di produzione tradizionali. Se fino a pochi anni fa erano necessari giorni, se non settimane per creare prototipi o singoli pezzi, oggi, grazie alla stampa 3D, siamo in grado di consegnare un modello nelle mani del cliente entro poche ore.</p>
+              </div>
+            </div>
+            <div class="col-md-4 animation-element fade-from-bottom">
+              <div class="center-text"><i class="material-icons">high_quality</i></div>
+              <div>
+                <h3 class="center-text">Personalizzazione</h3>
+                <p>Poichè la base di partenza per ogni progetto è un modello CAD, è possibile personalizzarlo in tutto per tutto, in modo da soddisfare le esigenze del cliente.
+                Questo principio, in ambito medico, è alla base della creazione di tutori personalizzati, modellati sulle caratteristiche fisiche del paziente.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s2 white-text" id="applicazioni-stampa">
+        <div class="container-md">
+          <div class="col-flex animation-element fade-in">
+            <h2>Per cosa scegliere la stampa 3d</h2>
+            <div class="row">
+              <div class="col-sm-6 col-flex">
+                <h3>Prototipazione rapida</h3>
+                <p>Grazie alle sue caratteristiche, la stampa 3D è l'ideale per ottenere prototipi in tempi rapidi e costi contenuti, in modo da poter verificare facilmente il design e la funzionalità dell'oggetto ed, eventualmente, agire prontamente ed efficacemente per migliorarlo al meglio.</p>
+              </div>
+              <div class="col-sm-6 col-flex">
+                <h3>Piccole produzioni serializzate</h3>
+                <p>Grazie alla relativa velocità e i costi sempre più contenuti, la stampa 3d si sta muovendo verso la possibilità di produzioni serializzate di piccole e medie quantità di oggetti personalizzati in tutto e per tutto.</p>
+              </div>        
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid printer scrolled-by-btn" id="printer">
+        <div class="container-md card-border s1 white-text">
+          <h2 class="center-text animation-element fade-from-top">Le nostre stampanti 3d</h2>
+          <div class="row">
+            <div class="col-sm-6 animation-element fade-from-left" id="Artillery">
+              <h3 class="center-text">Artillery Sidewinder X1</h3>
+              <div class="col-flex">  
+                <div class="col-sm-4 col-flex">
+                  <div class="img-round">
+                    <img src="assets/images/artillery2.png" alt="Artillery Sidewinder x1" title="Artillery Sidewinder x1">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 animation-element fade-from-left" id="Anet">
+              <h3 class="center-text">Anet A8</h3>
+              <div class="col-flex">
+                <div class="col-sm-4 col-flex">
+                  <div class="img-round">
+                    <img src="assets/images/anet.png" alt="Anet A8" title="Anet A8">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cta container-fluid">
+        <div class="container-fluid col-flex">
+          <span class="btn white-text o-bg" id="cta2" onclick="openForm()">CHIEDI UN PREVENTIVO</span>
+        </div>
+      </section>
+      <section class="form container-fluid" id="form">
+        <div class="container col-flex w-bg card-border">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfOn4PIbPw4islpwi0nZ-fMJnBS2Vx-3xIlSlOzPniI-GPP9Q/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Caricamento…</iframe>
+        </div>
+        <i onclick="closeForm()"class="material-icons" style="cursor: pointer;">clear</i>
+      </section>
+    </main>
+    <footer class="container-fluid">
+      <div class="container">
+        <div class="row-top contacts s1">
+          <div class="col-sm-4 center-text">
+            <p class="b">VERTICAL EYE<br>Drone solutions
+            <br>via Mazzini, 156<br>41049 Sassuolo (MO)</p>
+          </div>
+          <div class="col-sm-4 phone" id="phone">
+            <p class="b center-text">TELEFONO</p>       
+            <ul class="ul-lefted">
+              <li><a href="tel:+39 3400549443" class="row"><i class="material-icons">smartphone</i>+39 3400549443 - Andrea</a></li>
+              <li><a href="tel:+39 3466388256" class="row"><i class="material-icons">smartphone</i>+39 3466388256 - Filippo</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4 center-text mail" id="mail">
+            <p class="b">MAIL</p>
+            <ul class="ul-lefted">
+              <li><a href="mailto:verticaleye18@gmail.com" class="row"><i class="material-icons">mail</i>verticaleye18@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+        <br>
+        <div class="row social" id="">
+          <div class="col-4 center-text">
+          </div>
+          <div class="col-4 center-text row">
+            <div class="social-container facebook" id="">
+              <a href="https://www.facebook.com/verticaleye18/"><img src="assets/images/facebook.png" alt="facebook"></a>
+            </div>
+            <div class="social-container instagram" id="">
+              <a href="https://www.instagram.com/vertical_eye/?hl=it"><img src="assets/images/insta.png" alt="instagram"></a>
+            </div>
+          </div>
+          <div class="col-4 center-text">
+          </div>
+        </div>
+        <div class="row s0" id="lower">
+          <div class="col-4 center-text">
+            <p>Vertical Eye - Drone Solutions ©2020</p>
+          </div>
+          <div class="col-4 center-text">
+            <a href="https://www.iubenda.com/privacy-policy/47765479" class="iubenda-nostyle iubenda-embed" title="Privacy Policy ">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+          </div>
+          <div class="col-4 center-text">
+            <a href="https://www.iubenda.com/privacy-policy/47765479/cookie-policy" class="iubenda-nostyle iubenda-embed" title="Cookie Policy ">Cookie Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+          </div>
+        </div>    
+      </div>
+    </footer>
+    <script type="text/javascript" src="assets/javascripts/script.js"></script>
+  </body>
+</html>
