@@ -502,6 +502,19 @@ p{
   animation: none;
 }
 
+.cta-ok .btn{
+  font-size: 2rem;
+  cursor: pointer;
+  transform: scale(0.8);
+  animation: animate-cta 1s linear 0s alternate infinite;
+  margin: 25px 0;
+}
+
+.cta-ok .btn:hover{
+  transform: scale(1);
+  animation: none;
+}
+
 #initial{
   position: fixed;
   height: 100vh;
@@ -949,6 +962,17 @@ transform: translateY(25px);
   animation: ts-entry 1s linear 0s normal 1;
 }
 
+/**** ARCHEOLOGIA ****/
+
+#hero-archeo{
+  background: fixed url('../images/bga.jpg') no-repeat bottom / cover;
+}
+
+#archeo-intro{
+  background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
+              fixed url('../images/bga.jpg') no-repeat bottom / cover;
+}
+
 /**** STAMPA 3D ****/
 #print-intro{
   background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
@@ -964,13 +988,13 @@ transform: translateY(25px);
   padding-bottom: 50px;
 }
 
-#vantaggi-stampa .material-icons{
+.vantaggi-stampa .material-icons{
   font-size: 4rem;
   color: orange;
 }
 
 
-#vantaggi-stampa p{
+.vantaggi-stampa p{
   padding: 0 15px;
 }
 
@@ -979,7 +1003,7 @@ transform: translateY(25px);
   min-height: 100vh;
 }
 
-#vantaggi-stampa .row, #applicazioni-stampa .row{
+.vantaggi-stampa .row, #applicazioni-stampa .row{
   align-items: flex-start;
 }
 

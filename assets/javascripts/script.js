@@ -1,3 +1,4 @@
+
 function openPage(pageName, elmnt, color) {
   // Hide all elements with class="tabcontent" by default */
   var i, tabcontent, tablinks;
@@ -81,6 +82,12 @@ function check_if_in_view() {
     $('#el-logo').detach($gif);
   };
 
+  if (($('.cta-ok').hasClass('in-view'))) {
+    $('.cta').hide();
+  } else {
+    $('.cta').show();
+  };
+
 }
 
 
@@ -131,6 +138,4 @@ function stickyFunction() {
   }
 };
 
-
-  
 

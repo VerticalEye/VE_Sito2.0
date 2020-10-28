@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html lang="it">
   <head>
-    <title>VerticalEye | Soluzioni con drone</title>
-    <meta name="description" content="<%= yield(:meta_desc) %>">
+    <title>VerticalEye | Archeologia</title>
+    <meta name="description" content="Soluzioni per l'archeologia">
     <!--favicon START-->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/site.webmanifest">
-    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="assets/images/favicon/favicon.ico">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     <!--favicon FINE-->
     <meta charset="utf-8">
+    
     <link rel="stylesheet" type="text/css" href="assets/stylesheets/application.css">
-    <link rel="stylesheet" type="text/css" href="assets/stylesheets/normalize.css">
     <link rel="stylesheet" type="text/css" href="assets/stylesheets/grid-sistem.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
-  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script type="text/javascript" async>
       var _iub = _iub || [];
       _iub.csConfiguration = {"consentOnContinuedBrowsing":false,"perPurposeConsent":true,"enableCMP":true,"googleAdditionalConsentMode":true,"isTCFConsentGlobal":false,"whitelabel":false,"lang":"it","siteId":1958527,"cookiePolicyId":47765479, "banner":{ "acceptButtonDisplay":true,"customizeButtonDisplay":true,"acceptButtonColor":"#f4992c","acceptButtonCaptionColor":"#010101","customizeButtonColor":"#DADADA","customizeButtonCaptionColor":"#4D4D4D","position":"bottom","textColor":"#ffffff","backgroundColor":"#010101","rejectButtonColor":"#0073CE","rejectButtonCaptionColor":"white","brandBackgroundColor":"none","brandTextColor":"#ffffff" }};
     </script>
     <script type="text/javascript" src="//cdn.iubenda.com/cs/tcf/stub-v2.js" async></script>
     <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+    <script type="text/javascript" src="assets/javascripts/jquery.js"></script>
   </head>
-
   <body>
+    <div class="container-fluid col-flex" id="initial">
+      <div class="logo">
+        <img src="assets/images/biancovero trasparente_fermoepausa_loop.gif" alt="logo-gif">
+      </div>
+    </div>
     <header class="container-fluid" id="header">
       <div class="container-sm row">
         <div class="logo-container col" id="head-logo">
@@ -38,11 +43,11 @@
         <div class="col" id="navbar">
           <nav id="pc-nav">
             <ul class="nav-list ul-lefted">
-              <li class="active"><a href="#">Home</a></li>
+              <li class=""><a href="index.html">Home</a></li>
               <li class=""><a href="about.html">About</a></li>
               <li class=""><a href="drone.html">Drone</a></li>
               <li class=""><a href="survey.html">Rilievi</a></li>
-              <li class="invisible"><a href="archeologia.html">Archeologia</a></li>
+              <li class="active"><a href="archeologia.html">Archeologia</a></li>
               <li class=""><a href="print.html">Satmpa 3D</a></li>  
               <li class=""><a href="portfolio.html">Portfolio</a></li>
               <li class=""><a href="contacts.html">Contatti</a></li>
@@ -50,14 +55,14 @@
           </nav>
           <nav id="middle-nav">
             <ul class="nav-list ul-lefted">
-              <li class="active"><a href="#">Home</a></li>
-              <li class=""><a href="about.html">About</a></li>
+              <li class=""><a href="index.html">Home</a></li>
+              <li class="active"><a href="about.html">About</a></li>
               <li class="dropdown">
                 <div class="dropbtn row">Servizi <span class="material-icons" id="dropIcon">arrow_drop_down</span></i></div>
                 <ul class="dropdown-content ul-lefted invisible" id="myDropdown">
                   <li class=""><a href="drone.html">Drone</a></li>
                   <li class=""><a href="survey.html">Rilievi</a></li>
-                  <li class="invisible"><a href="archeologia.html">Archeologia</a></li>
+                  <li class="active"><a href="archeologia.html">Archeologia</a></li>
                   <li class=""><a href="print.html">Satmpa 3D</a></li>  
                 </ul>
               </li>     
@@ -68,7 +73,7 @@
           <nav id="mobile-nav">
             <div id="mySidenav" class="sidenav">
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-              <a href="#">Home</a>
+              <a href="index.html">Home</a>
               <a href="about.html">About</a>
               <a href="drone.html">Drone</a>
               <a href="survey.html">Rilievi</a>
@@ -90,13 +95,72 @@
       </div>
     </div>
     <main id="main">
+      <div class="hero container-fluid white-text center-text B" id="hero-archeo">
+        <div class="hero-titlebox"></div>
+        <div class="title-container"><h1>Archeologia</h1></div>
+      </div>
+      <section class="container-fluid white-text">
+        <div class="widescreen-post-hero col-flex rounded container">
+          <p class="italic s3 center-text animation-element fade-from-top">"Un archeologo è il miglior marito che una donna possa avere: più lei diventa vecchia, più lui s'interessa a lei"</p>
+          <p class="up animation-element fade-from-bottom s1">Agatha Christie</p>
+        </div>
+        <div class="container-md center-text">
+          <div class="rounded s2" id="archeo-intro">
+            <p class="justified animation-element fade-from-left">Offriamo a tutte le aziende e i rivati che operano in cantiere o in zone vincolate, un servizio di sorveglianza, scavo e documentazione archeologica altamente professionale e di grande precisione, avvalendoci di strumentazione all'avanguardia, fornendo un prodotto completo, valutando caso per caso le migliori soluzioni.</p>
+          </div>
+        </div>
+      </section>
+      <section id="applicazioni-archeo" class="fade-in vantaggi-stampa">
+        <div class="container col-flex s2">
+          <h2 class="center-text up B white-text">Cosa offriamo</h2>
+          <div class="container-fluid row justified white-text">
+            <div class="col-md-4 animation-element fade-from-bottom">
+              <div class="center-text"><i class="material-icons">visibility</i></div>
+              <div>
+                <h3 class="center-text">Sorveglianza archeologica</h3>
+                <p></p>
+              </div>
+            </div>
+            <div class="col-md-4 animation-element fade-from-bottom">
+              <div class="center-text"><i class="material-icons">map</i></div>
+              <div>
+                <h3 class="center-text">Indagini territoriali e archeologia preventiva</h3>
+                <p></p>
+              </div>
+            </div>
+            <div class="col-md-4 animation-element fade-from-bottom">
+              <div class="center-text"><i class="material-icons">engineering</i></div>
+              <div>
+                <h3 class="center-text">Scavo archeologicoe</h3>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cta container-fluid">
+        <div class="container-fluid col-flex">
+          <span class="btn white-text o-bg" id="cta2" onclick="openForm()">CHIEDI UN PREVENTIVO</span>
+        </div>
+      </section>
+      <section class="cta-ok container-fluid animation-element fade-in">
+        <div class="container-fluid col-flex">
+          <span class="btn white-text o-bg" id="cta2" onclick="openForm()">CHIEDI UN PREVENTIVO</span>
+        </div>
+      </section>
+      <section class="form container-fluid" id="form">
+        <div class="container col-flex w-bg card-border">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdVDiU5gnTpEhF5m0uuyfV1WWe54OqY3yLGrYF-wwYCKMIGtw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Caricamento…</iframe>
+        </div>
+        <i onclick="closeForm()"class="material-icons" style="cursor: pointer;">clear</i>
+      </section>
     </main>
     <footer class="container-fluid">
       <div class="container">
         <div class="row-top contacts s1">
           <div class="col-sm-4 center-text">
             <p class="b">VERTICAL EYE<br>Drone solutions
-            <br>via Mazzini, 156<br>41049 Sassuolo (MO)</p>
+            <br>viale Udine, 41<br>41049 Sassuolo (MO)</p>
           </div>
           <div class="col-sm-4 phone" id="phone">
             <p class="b center-text">TELEFONO</p>       
