@@ -724,12 +724,12 @@ transform: translateY(25px);
 }
 
 #hero-home{
-  background: fixed url('../images/bg-min.png') no-repeat bottom / cover;
+  background: fixed url('../images/bg-min.png') no-repeat center / cover;
 }
 
 #value-proposition .rounded{
   background: linear-gradient( rgba(0, 0, 0, .9), rgba(0, 0, 0, .5), rgba(0, 0, 0, .9)),
-              fixed url('../images/bg-min.png') no-repeat bottom / cover;
+              fixed url('../images/bg-min.png') no-repeat center / cover;
 }
 
 #brand-identity{
