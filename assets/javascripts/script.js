@@ -101,7 +101,7 @@ $("#defaultOpen").click();
 
   var $overlay = $('<div id="overlay"></div>');
   var $immagine = $('<img>');
-  var $desc = $('<p></p>')
+  var $desc = $('<p></p>');
 
   $("body").append($overlay);
   $overlay.append($immagine);
