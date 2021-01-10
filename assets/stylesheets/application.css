@@ -622,19 +622,16 @@ nav{
   border-radius: 3px;
 }
 
+.dropbtn.active{
+  background-color: #000000;
+  padding: 5px 5px;
+  border-radius: 3px;
+  color: #ffffff;
+}
+
 /* Links inside the dropdown */
 .dropdown-content li {
   display: block;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-  transition: 10s;
-}
-
-.dropdown:hover #dropIcon{
-  transform: rotateX(180deg);
-  transition: .5s;
 }
 
 .dropdown-content.show{
@@ -1273,15 +1270,17 @@ footer{
 }
 
 @media screen and (max-width: 1024px){
-  #pc-nav{
-    display: none;
-  }
+
 }
 
 @media screen and (max-width: 991px) {
 
 /************ NAVBAR **********/
   #middle-nav{
+    display: none;
+  }
+
+  #pc-nav{
     display: none;
   }
 

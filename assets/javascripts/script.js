@@ -21,19 +21,6 @@ function openPage(pageName, elmnt, color) {
 }
 
 
-$('.dropbtn').on('click', function openDropdwn(){
-    $('.dropdown-content').addClass('show');
-    $('.dropbtn span').css('transform', 'rotateX(180deg)');
-})
-
-$('main').on('click', function closeDropdwn(){
-  var myDropdown = $('#myDropdown');
-    if (myDropdown.hasClass('show')) {
-      myDropdown.removeClass('show').addClass('hid');
-      $('.dropbtn span').css('transform', 'rotateX(0deg)');
-    }
-})
-
 function openNav() {
   $("#mySidenav").css('width', '50%');
 }
@@ -90,7 +77,34 @@ function check_if_in_view() {
 
 }
 
+function addBackground(){
+  $('#home').css('background-color' , 'rgba(0, 172, 170, .2)');
+}
 
+var myDropdown = $('.dropdown-content');
+
+ function openDropdwn(){
+      $('.dropdown-content').addClass('show');
+      $('.dropdown-content').css('display', 'block');
+      $('.dropbtn span').css('transform', 'rotateX(180deg)');
+}
+
+function closeDropdwn(){
+    $('.dropdown-content').removeClass('show');
+    $('.dropdown-content').css('display', 'none');
+    $('.dropbtn span').css('transform', 'rotateX(0deg)');
+}
+
+function checkMenu(){
+  if (!myDropdown.hasClass('show')) {
+    $('.dropbtn').on('click', openDropdwn)
+  } else {
+    $('.dropbtn').on('click', closeDropdwn);
+    $('main').on('click', closeDropdwn);
+  }
+}
+
+$window.on('click', checkMenu);
 $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
 
