@@ -819,7 +819,7 @@ transform: translateY(25px);
 .flip-card {
   background-color: transparent;
   max-width: 350px;
-  height: 450px;
+  height: 600px;
   border-radius: 3%;
   perspective: 1000px; 
   margin: 10px auto;
@@ -849,7 +849,7 @@ transform: translateY(25px);
 .flip-card-front, .flip-card-back {
   position: absolute;
   max-width: 350px;
-  height: 400px;
+  height: 600px;
   backface-visibility: hidden;
 }
 
@@ -1432,6 +1432,10 @@ footer{
 
   .flip-card-back{
     font-size: 1.5rem;
+  }
+
+  .flip-card, .flip-card-front, .flip-card-back{
+    height: calc(100vh - 90px);
   }
 
   /* Place the timelime to the left */
