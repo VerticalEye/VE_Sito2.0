@@ -578,6 +578,7 @@ nav a:hover, nav .dropbtn:hover {
 
 nav a{
   padding: 5px 5px;
+  text-transform: capitalize;
 }
 
 nav{
@@ -1132,16 +1133,16 @@ transform: translateY(25px);
 }
 
 /**** CONTATTI + FOOTER ****/
-#contacts .card-border{
+#contatti .card-border{
   padding: 0 25px 30px 25px;
   background: rgba(255, 255, 255, .9);
 }
 
-#contacts .card-border{
+#contatti .card-border{
   margin: 25px 0;
 }
 
-.contacts ul li{
+.contatti ul li{
   display: block;
   list-style-type: none;
   display: flex;
@@ -1150,11 +1151,11 @@ transform: translateY(25px);
   justify-content: center;
 }
 
-.contacts i{
+.contatti i{
   margin-right: 10px;
 }
 
-.contacts i{
+.contatti i{
   color: #939993;
 }
 
