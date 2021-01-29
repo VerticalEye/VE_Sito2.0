@@ -486,10 +486,36 @@ p{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  }
+
+.cta a{
+  transform: scale(0.8);
+  animation: animate-cta 1s linear 0s alternate infinite;
+}
+
+.cta a:hover{
+  transform: scale(1);
+  animation: none;
+}
+
+.cta-ok a{
+  transform: scale(0.8);
+  animation: animate-cta 1s linear 0s alternate infinite;
+  margin: 0 0 50px 0;
+}
+
+.cta-ok a:hover{
+  transform: scale(1);
+  animation: none;
+}
+
+.cta-ok{
+  padding-bottom: 50px;
+  background: transparent;
 }
 
 .cta .btn{
-  font-size: 2rem;
+  font-size: 20px;
   cursor: pointer;
   transform: scale(0.8);
   animation: animate-cta 1s linear 0s alternate infinite;
@@ -501,8 +527,7 @@ p{
 }
 
 .cta-ok .btn{
-  font-size: 3.5rem;
-  padding: 12px 24px;
+  font-size: 30px;
   cursor: pointer;
   transform: scale(0.8);
   animation: animate-cta 1s linear 0s alternate infinite;
@@ -512,6 +537,11 @@ p{
 .cta-ok .btn:hover{
   transform: scale(1);
   animation: none;
+}
+
+.cta-ok{
+  padding-bottom: 50px;
+  background: transparent;
 }
 
 #initial{
@@ -539,6 +569,62 @@ p{
 
 .iubenda-tp-btn{
   display: none;
+}
+
+.accordion {
+  background-color: orange;
+  color: #000;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  height: 52px;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion.active, .accordion:hover  {
+  background-color: rgba(0, 0, 0, .9);
+  color: orange;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #000;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.accordion:hover:after{
+  color: orange;
+}
+
+.accordion.active:after {
+  content: "\2212";
+  color: orange;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: rgba(0, 0, 0, .2);
+  color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.panel.show {
+    display: block !important;
+}
+
+.panel .col-flex{
+  width: 100%;
+  padding-bottom: 15px;
 }
 
 /*********** HEADER ***********/
@@ -739,17 +825,18 @@ transform: translateY(25px);
   margin-top: 100px;
 }
 
-#cta-1 .container{
+#cta-1 .container.animation-element{
   background: rgba(0, 0, 0, .5);
   padding-bottom: 30px;
   border-radius: 3px;
+  margin: 15px auto;
 }
 
 #cta-1 .btn{
   transition: background .5s;
   color: #000000;
-  width: 100%;
   font-weight: bold;
+  margin: auto;
 }
 
 #cta-1 .btn:hover{
@@ -757,8 +844,68 @@ transform: translateY(25px);
   color: orange;
 }
 
+.showcase{
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+#servizi-drone .showcase:first-child{
+  background: linear-gradient( rgba(0, 0, 0, .2), rgba(0, 0, 0, .9), rgba(0, 0, 0, .2)), 
+              url('../images/fotogram.png') no-repeat center / cover;
+}
 
+#servizi-drone .showcase:nth-child(2){
+  background: linear-gradient( rgba(0, 0, 0, .2), rgba(0, 0, 0, .9), rgba(0, 0, 0, .2)), 
+              url('../images/riprese.png') no-repeat bottom / cover;
+}
+
+#servizi-drone .showcase:nth-child(3){
+  background: linear-gradient( rgba(0, 0, 0, .2), rgba(0, 0, 0, .9), rgba(0, 0, 0, .2)), 
+              url('../images/isp.png') no-repeat bottom / cover;
+}
+
+#servizi-drone .showcase:nth-child(4){
+  background: linear-gradient( rgba(0, 0, 0, .2), rgba(0, 0, 0, .9), rgba(0, 0, 0, .2)), 
+              url('../images/termo.png') no-repeat bottom / cover;
+}
+
+#servizi-drone .showcase:nth-child(5){
+  background: linear-gradient( rgba(0, 0, 0, .2), rgba(0, 0, 0, .9), rgba(0, 0, 0, .2)), 
+              url('../images/agri.png') no-repeat bottom / cover;
+  margin: 0 auto;
+}
+
+#servizi-topografia .showcase:nth-child(1){
+  background: linear-gradient( rgba(0, 0, 0, .2), rgba(0, 0, 0, .9), rgba(0, 0, 0, .2)), 
+              url('../images/ril1.png') no-repeat bottom / cover;
+}
+
+#servizi-topografia .showcase:nth-child(2){
+  background: linear-gradient( rgba(0, 0, 0, .2), rgba(0, 0, 0, .9), rgba(0, 0, 0, .2)), 
+              url('../images/archeo.png') no-repeat bottom / cover;
+}
+
+#servizi-topografia .showcase:nth-child(3){
+  background: linear-gradient( rgba(0, 0, 0, .2), rgba(0, 0, 0, .9), rgba(0, 0, 0, .2)), 
+              url('../images/3dobject.png') no-repeat bottom / cover;
+}
+
+#servizi-archeologia .showcase:nth-child(1){
+  background: linear-gradient( rgba(0, 0, 0, .2), rgba(0, 0, 0, .9), rgba(0, 0, 0, .2)), 
+              url('../images/back4.png') no-repeat bottom / cover;
+}
+
+#servizi-archeologia .showcase:nth-child(2){
+  background: linear-gradient( rgba(0, 0, 0, .2), rgba(0, 0, 0, .9), rgba(0, 0, 0, .2)), 
+              url('../images/assi.png') no-repeat bottom / cover;
+}
+
+#servizi-archeologia .showcase:nth-child(3){
+  background: linear-gradient( rgba(0, 0, 0, .2), rgba(0, 0, 0, .9), rgba(0, 0, 0, .2)), 
+              url('../images/bga.jpg') no-repeat bottom / cover;
+}
 
 
 /**** ABOUT ****/
@@ -770,7 +917,6 @@ transform: translateY(25px);
 #mission .rounded{
   background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)),
               fixed url('../images/about-min.png') no-repeat bottom / cover;
-
 }
 
 #team {
@@ -810,7 +956,7 @@ transform: translateY(25px);
 .inverted{
   display: flex;
   flex-direction: row-reverse;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -938,7 +1084,12 @@ transform: translateY(25px);
 }
 
 .icon-vantaggi{
-  align-items: flex-start;
+  align-items: flex-start !important;
+}
+
+.come-lavoriamo .material-icons{
+  font-size: 2em;
+  color: orange;
 }
 
 /**** OPERAZIONI CON DRONE ****/
@@ -1005,6 +1156,9 @@ transform: translateY(25px);
     padding-bottom: 250px;
   }
 
+#stampa-3d .card-border{
+  padding: 20px 0;
+}
 
 /**** PORTFOLIO ****/
 
@@ -1208,35 +1362,6 @@ footer{
 
 }
 
-/******FORM******/
-
-.form{
-  display: none;
-  background-color: rgba(0, 0, 0, .9);
-  position: fixed;
-  top: 0;
-  z-index: 10;
-  height: 100vh;
-  padding: 50px 0;
-}
-
-.form .container{
-  overflow: hidden;
-  width: 60%;
-}
-
-.form iframe{
-  width: 90%;
-  height: 90vh;
-}
-
-.form i{
-  color: #fff;
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  font-size: 3rem;
-}
 
 @media only screen and (min-width: 1200px) {
 
@@ -1389,6 +1514,7 @@ footer{
 
   .inverted{
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .services .row{
@@ -1472,26 +1598,6 @@ footer{
     padding-top: 50px;
   }
 
-  
-
-  /******FORM******/
-
-  .form .container{
-    width: 90%;
-  }
-
-  .form iframe{
-    width: 100%;
-    height: 90vh;
-  }
-
-  .form i{
-    color: #fff;
-    position: fixed;
-    top: 5px;
-    right: 5px;
-    font-size: 2rem;
-  }
 
 }
 
