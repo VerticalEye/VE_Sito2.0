@@ -899,7 +899,7 @@ transform: translateY(25px);
 
 #servizi-archeologia .showcase:nth-child(2){
   background: linear-gradient( rgba(0, 0, 0, .2), rgba(0, 0, 0, .9), rgba(0, 0, 0, .2)), 
-              url('../images/assi.png') no-repeat bottom / cover;
+              url('../images/Assi.png') no-repeat bottom / cover;
 }
 
 #servizi-archeologia .showcase:nth-child(3){
