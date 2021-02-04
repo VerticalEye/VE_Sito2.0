@@ -28,7 +28,7 @@
   <meta name="theme-color" content="#ffffff">
   <!--favicon FINE-->
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="assets/stylesheets/application.css">
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
   <link rel="stylesheet" type="text/css" href="assets/stylesheets/grid-sistem.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -101,10 +101,142 @@
       </div>
     </div>
   </header>
-  <main>
-  	<div class="hero container-sm">
-  		<h1 class="white-text">La Fotogrammetria</h1>
-  	</div>
+  <main id="main-fotogrammetria">
+  	<div class="hero container-fluid hero-fotog s2 col-flex" id="hero-fotog">
+      <h1 class="up center-text">FOTOGRAMMETRIA</h1>
+    </div>
+    <section class="container-fluid" id="Fotogrammetria">
+      <div class="container-sm s2 justified">
+        <p></p>
+
+        <h2 class="">Cosa è la fotogrammetria?</h2>
+        <p>La fotogrammetria è una tecnica di rilievo afferente alla branca della geomatica che permette di determinare le caratteristiche fisiche e metriche di un un oggetto (forma e posizione) avvalendosi delle prospettive fotografiche centrali. La fotogrammetria è, quindi, l'arte e la scienza utilizzata per determinare la posizione e la forma degli oggetti a partire dall' acquisizione e analisi di una coppia di fotogrammi riprendenti la stesa scena (coppia stereometrica o fotogrammi stereometrici). Trova applicazioni in cartografia, topografia, archeologia e persino nell'ambito dell'architettura, interessando il rilievo di fabbricati (fotogrammetria architettonica).<br>
+        Attualmente la fotogrammetria rappresenta una delle tecniche di acquisizione dei dati del territorio tra le più affidabili, economiche e precise. Essa è molto utile nell'analisi dei cambiamenti del territorio.</p>
+        <h2 class="">Come funziona la fotogrammetria?</h2>
+        <p>Alla base della possibilità di ricostruire posizione e forma di oggetti a partire da fotografie vi è la conoscenza delle relazioni geometriche secondo le quali si sono formate le immagini: queste possono essere considerate, con sufficiente approssimazione, prospettive centrali dell’oggetto fotografato (una proiezione si definisce centrale quando il centro di proiezione C è un punto proprio).</p>
+        <div class="container-fluid row text-img">
+          <p class="col-md-8">Avendo due fotografie che riprendono una stessa scena, il generico punto P genera la sua immagine P' sulla fotografia 1 e la sua immagine P" sulla fotografia 2; i raggi r' e r" si definiscono raggi omologhi. La proiezione delle intersezioni dei raggi omologhi fornisce la posizione univoca del punto nello spazio.</p>
+          <div class="col-md-3 img-container" id="">
+            <img src="assets/images/stereo.jpg" class="overlaied" alt="Schemi geometrici della fotogrammetria" title="Schemi geometrici della fotogrammetria">
+            <div class="label">
+              <p class="labelText">Schemi geometrici della fotogrammetria</p>
+            </div>
+          </div>
+        </div>
+        <p>Lo strumento che permette di definire le coordinate nello spazio di un qualsiasi punto ripreso in due fotogrammi sono le <strong>equazioni di collinearità</strong>: risolvendo tali equazioni è possibile definire le coordinate spaziali di ciascun punto ripreso in ogni coppia di fotogrammi.</p>
+        <div class="accordion B">Le equazioni di collinearità: approfondimento</div>
+          <div class="panel">
+            <p>Le equazioni di collinearitàesprimono la condizione che i due raggi omologhi che partono da un punto generico P sull'oggetto e arrivano ai due fotogrammi passando per il centro delle lenti dell'obbiettivo, siano complanari e appunto incidenti nel punto P.</p>
+            <div class="col-flex">
+              <div class="img-container col-md-6" id="">
+                <img src="assets/images/coll.png" class="overlaied" alt="Equazioni di collinearità" title="Equazioni di collinearità">
+                <div class="label">
+                  <p class="labelText">Equazioni di collinearità</p>
+                </div>
+              </div>
+            </div>
+            <p>L'espressione delle equazioni è la seguente, dove:</p>
+            <ul>
+              <li>ξ e η  sono le coordinate del punto P misurate nel sistema di riferimento interno (sistema fotogramma)</li>
+              <li>ξ0 e η0  sono le coordinate del Punto Principale nel sistema fotogramma</li>
+              <li>c è la distanza focale</li>
+              <li>rnn sono gli elementi di quella che viene chiamata matrice di rotazione, cioè una serie di parametri che sostanzialmente definiscono l'assetto del fotogramma nello spazio, mediante i 3 angoli di rotazione che si vengono ad avere intorno agli assi del sistema   di riferimento oggetto (ω attorno all'asse X, ϕ attorno all'asse Y, κ attorno all'asse Z)</li>
+              <li>X, Y, Z sono le coordinate del punto P nel sistema di riferimento esterno (sistema di riferimento oggetto)</li>
+              <li>X0, Y0, Z0 sono le coordinate del centro di presa "O" del fotogramma rispetto al sistema di riferimento oggetto.</li>
+            </ul>
+            <p>Nelle equazioni sopra, ξ e η  si ricavano facendo misure sul fotogramma (coordinate fotogramma del punto P), e, distanza focale, è nota. X0, Y0, Z0, ω, ϕ e κ sono quelli che vengono chiamati parametri di Orientamento Esterno (O.E.), definiscono l'assetto del fotogramma nello spazio e si possono ricavare facendo misure di tipo topografico ai cosiddetti Punti Fotogrammetrici d'Appoggio (PFA). Le incognite del problema sono quindi le coordinate X, Y e Z, vale a dire tre incognite. Come si è a conoscenza dalla matematica, un problema in cui occorre risolvere tre incognite deve necessariamente avere almeno tre equazioni indipendenti tra loro. Le equazioni che si sono scritte sopra sono solamente due e riferite a un singolo fotogramma. Occorre quindi necessariamente avere a disposizione un altro fotogramma in cui compare lo stesso punto P. In questo modo è possibile scrivere altre due equazioni e risolvere così il problema.</p>
+          </div>
+          
+      </div>    
+    </section>
+    <section class="container-fluid intra" id="intra-4">
+      
+    </section>
+    <section class="container-fluid" id="operatori-SAPR">
+      <div class="container-sm s2">
+        <h2>La fotogrammetria automatica</h2>
+        <p>La fotogrammetria digitale automatica, o <i>Image-Based Modeling and Rendering</i>, è l'evoluzione della fotogrammetria tradizionale, resa possibile dallo sviluppo di di calcolatori sempre più potenti e in grado di gestire una grande quantità di dati e della grafica computerizzata. Si tratta di una metodologia di rilievo che offre la possibilità di ricavare modelli tridimensionali geometricamente corretti, scalabili e georifereferenziabili, partendo da un dataset di immagini bidimensionali. Automatizzando gran parte delle fasi operative, la fotogrammetria automatica riduce notevolmente l'intervento dell'operatore rispetto la fotogrammetria tradizionale.</p>
+        <h2>La fotogrammetria automatica: come funziona?</h2>
+        <p>La fotogrammetria moderna si avvale di software di fotogrammetria basati su algoritmi <i>Structure from Motion (SfM)</i>. Ne esistono moltissimi, con tante funzionalità differenti, sia Free/Open Source che proprietari: Python Photogrammetry Toolbox, Visual SFM, OpenDroneMap(ODM), Agisoft Metashape, 3DF Zephyr, Bundler, Photomod, Pix4D, MicMac, Visual SfM, …<br>
+        Gli algoritmi di Structure from Motion nascono dalla fotogrammetria tradizionale e si sono evoluti grazie all’implementazione di quelli della Computer Vision. Ai principi teorici di collinearità, intersezione di raggi proiettivi, calibrazione della fotocamera, si affiancano gli algoritmi tipici della visione robotica che permettono di analizzare e correlare immagini digitali in modo veloce ed automatico.<br>
+        Partendo da un dataset di immagini, questi algoritmi permettono, seguendo precisi passaggi, che variano a seconda del software utilizzato, di ottenere la ricostruzione tridimensionale dell’oggetto di interesse, che sia esso un piccolo oggetto mobile, o una porzione del paesaggio.<br>
+        Sfruttando algoritmi di <i>features-detection</i>, identificano in modo automatico migliaia di punti notevoli per ogni immagine, li confrontano con quelli delle altre immagini, creando un legame tra i fotogrammi grazie agli omologhi.<br>
+        A questo punto, determinati i punti di legame, i software possono impostare e risolvere le equazioni di collinearità fornendo una serie di output:</p>
+        <ul>
+          <li>posizione e orientamento delle fotocamere</li>
+          <li>parametri di calibrazione e distorsione della fotocamera</li>
+          <li><strong>nuvola di punti sparsa</strong>: le coordinate 3D dei punti di legame, con l'aggiunta del valore medio del colore del pixel corrispondente.</li>
+        </ul>
+        <p>Questi diventano la base di partenza per una nuova serie di processi sfruttando algoritmi di <i>Image Matching, che, cercando le "corrispondenze pixel to pixel" all’interno di una coppia di immagini,</i> permettono la creazione delle cosiddette <strong>mappe di profondità</strong> e di una <strong>nuvola di punti densa.</strong></p>
+        <p>Le nuvole dense sono un risultato ricchissimo di informazioni, che rappresenta un oggetto nella sua tridimensionalità. Tuttavia, tale risultato non rappresenta un solido descritto da superfici ma, per l’appunto, una serie di punti con coordinate precise, in relazione tra loro.<br>
+        Grazie ad altri algoritmi, o a volte all'utilizzo di software diversi, è possibile trasformare la nuvola densa in una supericie definita <strong>mesh triangolare</strong> a cui può successivamente essere applicata una texture, ricavata dalle immagini, che rende il modello tridimensionale più realistico. Molti software permettono poi di estrapolare diverse tipologie di dati e informazioni sottoforma di diversi formati dal modello tridimensionale:</p>
+        <ul>
+          <li>Ortofoto da utilizzare come base per cartografia o prospetti</li>
+          <li>Modelli Digitali di Elevazione (DEM, DSM, DTM) </li>
+          <li>Sezioni</li>
+          <li>Curve di livello</li>
+          <li>Fotografie "raddrizzate", cioè senza distorsione.</li>
+        </ul>
+      </div>
+    </section>
+    <section class="container-fluid intra" id="intra-5">
+      
+    </section>
+    <section class="container-fluid" id="operatori-SAPR">
+      <div class="container-sm s2">
+        <h2>Ma a cosa serve la fotogrammetria? Che applicazioni può avere?</h2>
+        <p>Le applicazioni della fotogrammetria sono molteplici ed in molteplici ambiti:</p>
+        <h3>Architettura</h3>
+        <ul>
+          <li>Ricostruzioni 3D di edifici</li>
+          <li>Piante</li>
+          <li>Prospetti</li>
+          <li>Sezioni</li>
+        </ul>
+        <h3>Archeologia e Beni Culturali</h3>
+        <ul>
+          <li>Rilievi archeologici tri e bidimensionali</li>
+          <li>Indagini Territoriali</li>
+          <li>Catalogazione digitale</li>
+          <li>Creazione contenuti multimediali (siti web, musei virtuali e non, applicazioni digitali, realtà aumentata)</li>
+          <li>Documentazione e analisi dello stato di conservazione dell'opera prima di un restauro per valutare entità e modlità più appropriate di intervento</li>
+          <li>Produzione di una o più copie dell'oggetto avvalendosi della stampa 3D, utile per la realizzazione di percorsi museali tattici o attività didattiche per le scuole, oppure per realizzare oggettistica per il merchandising</li>
+          <li>Creazione di virtual tour e musei digitali</li>
+        </ul>
+        <h3>Geologia, cartografia tecnica e tematica, infrastrutture</h3>
+        <ul>
+          <li>Creazione di DEM/ DSM/ DTM</li>
+          <li>Generazione di Cartografia tecnica o tematica</li>
+          <li>Rilievi per calcolo volumetrie/ progettazione ampliamenti in cave</li>
+          <li>Monitoraggio dissesti (frane) o infrastrutture</li>
+        </ul>
+        <h3>Edilizia</h3>
+        <ul>
+          <li>Rilievo di monitoraggio S.A.L</li>
+          <li>Rilievo di supporto a studi di progettazione</li>
+          <li>Rilievi dello stato di fatto</li>
+        </ul>
+      </div>
+    </section>
+    <section class="intra container-fluid" id="intra-6"></section>
+    <section class="container-fluid">
+      <div class="container-sm s2 col-flex">
+        <p>Vertical Eye si occupa di rilievi fotogrammetrici e di rilievo in generale 2018 e da allora forniamo servizi specializzati e di alta qualità sia con drone che non, mettendo a vostra dispozizione tutta la nostra esperienza, la nostra passione, il rispetto per le norme e la nostra tecnologia, ma soprattutto la nostra voglia di innovare e sperimentare.<br>
+        Che si tratti di fotogrammetria terrestre o aerea, di rilievo di vasti territori o di piccoli oggetti, dalle fotografie fino all’output finale, utilizziamo gli strumenti più avanzati e adeguati per ottenere il massimo risultato, nel rispetto delle esigenze, anche economiche, di chi decide di darci fiducia.</p>
+        <div class="row container-fluid">
+          <div class="col-md-6 col-flex">
+            <a href="drone" class="btn o-bg white-text">SCOPRI I NOSTRI SERVIZI CON DRONE</a>
+          </div>
+          <div class="col-md-6 col-flex">
+            <a href="rilievo-topografico" class="btn o-bg white-text">SCOPRI LE NOSTRE SOLUZIONI DI RILIEVO</a>
+          </div>
+        </div>
+      </div>
+      <div class="container col-flex s2">
+          <h2>Ti interessa saperne di più?</h2>
+          <a href="https://academy.verticaleye.it" class="btn o-bg white-text">SCOPRI ANCHE I NOSTRI CORSI</a>
+        </div>
+    </section>
   </main>
   <footer class="container-fluid">
     <div class="container">
@@ -155,6 +287,7 @@
       </div>    
     </div>
   </footer>
-  <script type="text/javascript" src="assets/javascripts/script.js"></script>
+  <script type="text/javascript" src="assets/javascripts/javascript.js"></script>
+  <script type="text/javascript" src="assets/javascripts/script5.js"></script>
 </body>
 </html>
