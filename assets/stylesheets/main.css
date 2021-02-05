@@ -109,10 +109,14 @@ ul{
   padding-left: 0;
   list-style-position: inside;
 }
- main section:not(:first-child){
-  padding: 50px 0;
- }
 
+main section:not(:first-child){
+  padding: 50px 0;
+}
+
+h1{
+  text-shadow: 2px 2px 5px #000000;
+}
 
 /*********** HEADER ***********/
 
@@ -811,7 +815,7 @@ footer{
 }
 
 @media only screen and (max-width: 575px) {
-  #hero-fotog.s2{
+  #hero-fotog.s3{
     font-size: 2.3rem;
   }
 

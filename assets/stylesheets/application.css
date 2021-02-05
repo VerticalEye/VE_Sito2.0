@@ -1,5 +1,4 @@
 /**********TIPOGRAFIA************/
-
 .center-text{
   text-align: center;
 }
@@ -28,20 +27,8 @@
   color: white;
 }
 
-.primary-text{
-  color: #00acaa;
-}
-
-.secondary-text{
-  color: #696969;
-}
-
-.tertiary-text{
-  color: #ff5757;
-}
-
-.fourth-text{
-  color: #a8d5e2;
+.o-text{
+  color: orange;
 }
 
 .text-shadow{
@@ -143,6 +130,7 @@ main {
 
 h1{
   font-size: 6rem;
+  text-shadow: 2px 2px 5px #000000;
 }
 
 p{
