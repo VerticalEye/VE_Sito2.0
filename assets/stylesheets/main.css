@@ -626,12 +626,12 @@ footer{
 /************FOTOGRAMMETRIA**************/
 .hero-fotog{
   background: linear-gradient( rgba(255, 255, 255, .6), rgba(255, 255, 255, .1), rgba(0, 0, 0, .8)),
-              url(../images/fotogram.png) no-repeat fixed top / cover;
+              url(../images/zephyr.jpg) no-repeat fixed top / cover;
 }
 
 #intra-4{
   background: linear-gradient( rgba(0, 0, 0, .8), rgba(255, 255, 255, .1), rgba(0, 0, 0, .8)),
-              url(../images/DEM_Castello.png) no-repeat fixed center / cover;
+              url(../images/zephyr3.jpg) no-repeat fixed center / cover;
   margin-top: 30px;
 }
 
