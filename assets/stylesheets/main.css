@@ -57,7 +57,7 @@
 }
 
 .o-bg{
-  background-color: orange;
+  background-color: #EB8613;
 }
 
 /*********** GENERAL ***********/
@@ -687,7 +687,7 @@ footer{
 /************FOTOGRAMMETRIA**************/
 .hero-fotog{
   background: linear-gradient( rgba(255, 255, 255, .6), rgba(255, 255, 255, .1), rgba(0, 0, 0, .8)),
-              url(../images/zephyr.jpg) no-repeat fixed top / cover;
+              url(../images/Aerofoto.JPG) no-repeat fixed top / cover;
 }
 
 #intra-4{
@@ -710,24 +710,56 @@ footer{
 /************BONUS 110**************/
 .hero-superbonus{
   background: linear-gradient( rgba(255, 255, 255, .6), rgba(255, 255, 255, .1), rgba(0, 0, 0, .8)),
-              url(../images/nuvola_casa.png) no-repeat fixed top / cover;
+              url(../images/SuperBonus.JPG) no-repeat fixed top / cover;
 }
 
 #intra-7{
   background: linear-gradient( rgba(255, 255, 255, .6), rgba(255, 255, 255, .1), rgba(0, 0, 0, .8)),
-              url(../images/drone-bg2.png) no-repeat fixed center / cover;
+              url(../images/Aerofoto.JPG) no-repeat fixed center / cover;
   margin-top: 30px;
 }
 
 #intra-8{
   background: linear-gradient( rgba(255, 255, 255, .6), rgba(255, 255, 255, .1), rgba(0, 0, 0, .8)),
-              url(../images/drone-bg3.png) no-repeat fixed center / cover;
+              url(../images/SuperBonus4.JPG) no-repeat fixed center / cover;
 }
 
 #intra-9{
   background: linear-gradient( rgba(255, 255, 255, .6), rgba(255, 255, 255, .1), rgba(0, 0, 0, .8)),
-              url(../images/drone-bg4.png) no-repeat fixed center / cover;
+              url(../images/SuperBonus2.JPG) no-repeat fixed center / cover;
 }
+
+
+#servizi-bonus .row, #servizi-bonus .inverted{
+  margin-bottom: 100px;
+  
+  padding: 50px 20px;
+  border-radius: 5px;
+}
+
+#servizi-bonus .img-container{
+  width: 100%;
+  margin: auto;
+}
+
+#enac{
+  width: 50%;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+#servizi-bonus .apllications{
+  padding: 50px 20px;
+  background-color: #EB8613;
+  border-radius: 3px;
+}
+
+#servizi-bonus .col-md-7{
+  padding: 0 20px;
+  background-color: rgba(35, 87, 137, .5);
+  border-radius: 3px;
+}
+
 
 /**** The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect ****/
 .flip-card {
@@ -850,6 +882,10 @@ footer{
 
   .accordion{
     height: auto;
+  }
+
+  #servizi-bonus .img-container{
+    width: 100%;
   }
 
 }
