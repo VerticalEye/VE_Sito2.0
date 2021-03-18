@@ -587,6 +587,12 @@ nav{
   font-size: 1.5rem;
 }
 
+.showcase{
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /**** CONTATTI + FOOTER ****/
 #contatti .card-border{
@@ -684,6 +690,41 @@ footer{
               url(../images/drone-bg4.png) no-repeat fixed center / cover;
 }
 
+.come-lavoriamo .material-icons, #operatori-SAPR-city .material-icons{
+  font-size: 2em;
+  color: orange;
+}
+
+.servizi-drone .showcase:first-child{
+  background: linear-gradient( rgba(0, 0, 0, .2), rgba(0, 0, 0, .9), rgba(0, 0, 0, .2)), 
+              url('../images/fotogram.png') no-repeat center / cover;
+}
+
+.servizi-drone .showcase:nth-child(2){
+  background: linear-gradient( rgba(0, 0, 0, .2), rgba(0, 0, 0, .9), rgba(0, 0, 0, .2)), 
+              url('../images/riprese.png') no-repeat bottom / cover;
+}
+
+.servizi-drone .showcase:nth-child(3){
+  background: linear-gradient( rgba(0, 0, 0, .2), rgba(0, 0, 0, .9), rgba(0, 0, 0, .2)), 
+              url('../images/isp.png') no-repeat bottom / cover;
+}
+
+.servizi-drone .showcase:nth-child(4){
+  background: linear-gradient( rgba(0, 0, 0, .2), rgba(0, 0, 0, .9), rgba(0, 0, 0, .2)), 
+              url('../images/termo.png') no-repeat bottom / cover;
+}
+
+.servizi-drone .showcase:nth-child(5){
+  background: linear-gradient( rgba(0, 0, 0, .2), rgba(0, 0, 0, .9), rgba(0, 0, 0, .2)), 
+              url('../images/agri.png') no-repeat bottom / cover;
+  margin: 0 auto;
+}
+
+#map img{
+  max-height: calc(100vh - 60px);
+}
+
 /************FOTOGRAMMETRIA**************/
 .hero-fotog{
   background: linear-gradient( rgba(255, 255, 255, .6), rgba(255, 255, 255, .1), rgba(0, 0, 0, .8)),
@@ -754,12 +795,11 @@ footer{
   border-radius: 3px;
 }
 
-#servizi-bonus .col-md-7{
+#servizi-bonus .col-md-7, #locations .container-sm, .blue-bg{
   padding: 0 20px;
   background-color: rgba(35, 87, 137, .5);
   border-radius: 3px;
 }
-
 
 /**** The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect ****/
 .flip-card {
